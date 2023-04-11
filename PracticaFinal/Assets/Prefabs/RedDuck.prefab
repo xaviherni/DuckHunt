@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 1039179053991275927}
   - component: {fileID: 5406987954353097463}
   m_Layer: 6
-  m_Name: Square
+  m_Name: RedDuck
   m_TagString: Duck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
