@@ -57,5 +57,4 @@ public class GameManager : MonoBehaviour
         string puntuacion = kills.ToString();   
         PlayerPrefs.SetString(NAME_KEY, puntuacion);
     }
-
 }

@@ -35,7 +35,7 @@ public class Movement : MonoBehaviour
 
     private void CheckCollision()
     {
-        if (Physics2D.Raycast(pointer.position, Vector2.right, distance, WhatIsWall))
+        if (Physics2D.Raycast(pointer.position, transform.right, distance, WhatIsWall))
         {
             ChangeDirection();
         }
@@ -47,13 +47,14 @@ public class Movement : MonoBehaviour
         Vector3 tempScale = transform.localScale;
         if (moveRight)
         {
-            tempScale.x = Mathf.Abs(tempScale.x);
+            //tempScale.x = Mathf.Abs(tempScale.x);
+            transform.rotation = Quaternion.identity;
         }
         else
         {
-            tempScale.x = -Mathf.Abs(tempScale.x);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
         }
-        transform.localScale = tempScale;
+        //transform.localScale = tempScale;
     }
 
 }
