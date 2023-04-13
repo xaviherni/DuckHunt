@@ -13,9 +13,12 @@ public class Timer : MonoBehaviour
 
     [SerializeField] private GameObject panel;
 
+    private GameManager gameManager;
+
 
     private void Awake()
     {
+        gameManager = FindObjectOfType<GameManager>();
         timerText.text = timer.ToString("0.00");
         panel.SetActive(false);
     }
@@ -32,6 +35,9 @@ public class Timer : MonoBehaviour
         {
             timer = 0;
             panel.SetActive(true);
+            gameManager.SavePunctuation();
+            gameManager.LoadPuntuaction();
+            gameManager.CheckMaxScore();
             Destroy(gameObject);
         }
 
