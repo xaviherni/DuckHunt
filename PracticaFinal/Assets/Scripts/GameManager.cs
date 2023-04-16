@@ -37,12 +37,12 @@ public class GameManager : MonoBehaviour
     private void OnEnable()
     {
         
-        Shoot.onScore += UpdateScore;
+        Shoot.OnScore += UpdateScore;
     }
 
     private void OnDisable()
     {
-        Shoot.onScore -= UpdateScore;
+        Shoot.OnScore -= UpdateScore;
     }
 
     private void UpdateScore()
