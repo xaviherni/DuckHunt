@@ -797,6 +797,7 @@ MonoBehaviour:
   timerText: {fileID: 1529482777}
   gameObject: {fileID: 1721702593}
   panel: {fileID: 692579247}
+  sound: {fileID: 1337763707}
 --- !u!4 &689837051
 Transform:
   m_ObjectHideFlags: 0

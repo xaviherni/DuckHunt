@@ -16,6 +16,8 @@ public class Timer : MonoBehaviour
 
     private GameManager gameManager;
 
+    [SerializeField] private GameObject sound;
+
 
     private void Awake()
     {
@@ -39,7 +41,9 @@ public class Timer : MonoBehaviour
             gameManager.SavePunctuation();
             gameManager.LoadPuntuaction();
             gameManager.CheckMaxScore();
+            sound.SetActive(false);
             Destroy(gameObject);
+            
         }
 
     }
