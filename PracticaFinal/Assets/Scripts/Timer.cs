@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class Timer : MonoBehaviour
 {
@@ -17,6 +16,8 @@ public class Timer : MonoBehaviour
     private GameManager gameManager;
 
     [SerializeField] private GameObject sound;
+
+    public static Action onTimeEnd;
 
 
     private void Awake()
@@ -36,6 +37,7 @@ public class Timer : MonoBehaviour
         }
         else
         {
+            onTimeEnd?.Invoke();
             timer = 0;
             panel.SetActive(true);
             gameManager.SavePunctuation();
