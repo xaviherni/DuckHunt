@@ -6,14 +6,14 @@ using UnityEngine.UI;
 
 public class Restart : MonoBehaviour
 {
-    [SerializeField] private Sprite[] spritesBg;
-    [SerializeField] private Image newBackground;
-
-    private int random;
-
-
     public void RestartButton()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Inicio");
+    }
+
 }

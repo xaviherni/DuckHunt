@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b7155f6a0931d540be0e9b921757efb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifes: 0
+  lifes: 1
   shootClip: {fileID: 8300000, guid: 6a5558bca9d6bf549bcb537c1aeeb749, type: 3}
   deadClip: {fileID: 8300000, guid: 9ac10a903ebfc50458cf8980aaa04fc8, type: 3}
 --- !u!114 &1272837405367681839
